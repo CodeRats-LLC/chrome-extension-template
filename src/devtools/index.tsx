@@ -1,17 +1,17 @@
-import Devtools from '@src/devtools/Devtools';
+import DevTools from '@src/devtools/DevTools';
 import { initElement } from '@src/main';
 
 const bootstrap = () => {
   try {
     chrome.devtools.panels.create(
-      'My new Dev Tools panel',
+      'MyDevToolsPanel',
       'src/devtools/icon-34.png',
       'src/devtools/index.html'
     );
   } catch (e) {
     console.error(e);
   }
-  initElement(<Devtools />);
+  initElement(<DevTools />);
 };
 
 bootstrap();

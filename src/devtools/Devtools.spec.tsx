@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/preact';
-import Devtools from './Devtools';
+import DevTools from './DevTools';
 
-describe('Devtools page', () => {
-  it('should render the Devtools page', () => {
-    render(<Devtools />);
+describe('DevTools page', () => {
+  it('should render the DevTools page', () => {
+    render(<DevTools />);
     expect(screen.getByTestId('devtools_text').textContent).toEqual(
-      'Dev tools panel'
+      'Dev Tools panel'
     );
   });
 });

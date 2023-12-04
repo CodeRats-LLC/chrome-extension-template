@@ -1,11 +1,11 @@
 {
-  "name": "chrome-extension-template-preact-vite",
+  "name": "chrome-extension-template",
   "version": "0.0.1",
-  "description": "Chrome extension template with Preact, Tailwind CSS, Vite and Typescript preconfigured.",
+  "description": "Chrome extension template (Preact, Unocss, Vite, Typescript).",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fell-lucas/chrome-extension-template-preact-vite.git"
+    "url": "https://github.com/CodeRats-LLC/chrome-extension-template.git"
   },
   "scripts": {
     "build": "vite build",
@@ -15,7 +15,7 @@
     "format": "prettier src/ scripts/ --write"
   },
   "type": "module",
-  "packageManager": "pnpm@8.10.5",
+  "packageManager": "npm@v18.14.0",
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
@@ -43,7 +43,7 @@
     "nodemon": "^3.0.0",
     "postcss": "^8.4.21",
     "preact": "^10.13.0",
-    "preact-render-to-string": "^6.0.0",
+    "preact-render-to-string": "*",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.5.0",
     "tailwindcss": "^3.2.7",

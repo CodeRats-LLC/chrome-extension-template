@@ -211,6 +211,7 @@ export interface ManifestType {
       }
     | undefined;
   short_name?: string | undefined;
+  side_panel?: chrome.runtime.SidePanel | undefined;
   spellcheck?:
     | {
         dictionary_language?: string | undefined;

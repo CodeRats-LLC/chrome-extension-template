@@ -1,6 +1,6 @@
 import { Logo } from '@src/assets/img/logo';
 
-const DevTools = () => {
+const Sidepanel = () => {
   return (
     <div class='flex h-screen flex-1 flex-col justify-center bg-[#673ab8] p-8 text-center text-lg'>
       <Logo />
@@ -15,11 +15,11 @@ const DevTools = () => {
           Learn Preact
         </a>
       </p>
-      <p data-testid='devtools_text' class='p-6 text-3xl text-purple-400'>
-        Dev Tools panel
+      <p data-testid='sidepanel_text' class='p-6 text-3xl text-purple-400'>
+        Sidepanel page
       </p>
     </div>
   );
 };
 
-export default DevTools;
+export default Sidepanel;

@@ -1,6 +1,6 @@
 import { Logo } from '@src/assets/img/logo';
 
-const Newtab = () => {
+const NewTab = () => {
   return (
     <div class='flex h-screen flex-1 flex-col justify-center bg-[#673ab8] p-8 text-center text-lg'>
       <Logo />
@@ -16,10 +16,10 @@ const Newtab = () => {
         </a>
       </p>
       <p data-testid='newtab_text' class='p-6 text-3xl text-purple-400'>
-        New tab page
+        New Tab page
       </p>
     </div>
   );
 };
 
-export default Newtab;
+export default NewTab;
