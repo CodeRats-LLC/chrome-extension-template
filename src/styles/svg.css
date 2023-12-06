@@ -1,0 +1,21 @@
+/*
+ * NOTE: SVG inlined into the page for interactivity purposes requires some
+ *       additional CSS to work properly. The @namespace rule and svg| prefix
+ *       are required for the CSS to be applied to the SVG elements.
+ *
+ *       Vite does not support CSS @namespace rules, so we also have to ensure
+ *       the @namespace rule for SVG is included _at the top of the CSS file_
+ *       produced by the build process. See cssns.css for that rule.
+ *
+ *       The Vite build process will warn about unsupported @namespace, but
+ *       the resulting application still handles the SVG correctly.
+ */
+
+/* this will be ignored by built image but is required for dev */
+@namespace svg url("http://www.w3.org/2000/svg");
+
+svg|svg {
+  overflow: hidden;
+  overflow-clip-margin: content-box;
+}
+

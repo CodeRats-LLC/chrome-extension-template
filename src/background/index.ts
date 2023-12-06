@@ -1,11 +1,13 @@
-console.log('background loaded');
+console.log('service worker loaded');
 
 // A generic onclick callback function.
 function genericOnClick(info: chrome.contextMenus.OnClickData, tab: chrome.tabs.Tab | undefined) {
   switch (info.menuItemId) {
     case 'sampleContextMenu':
       // toggle the sidebar
+      if (!tab) return;
       chrome.sidePanel.open({ windowId: tab.windowId });
+      break;
     default:
       break;
   }

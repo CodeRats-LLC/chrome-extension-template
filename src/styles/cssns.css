@@ -1,0 +1,8 @@
+/* NOTE: Namespaces here end up at the top of the CSS file produced by the Vite
+ *       build process. The SVG namespace is particularly important so that SVG
+ *       elements can be styled and interacted with properly.
+ *
+ *       See svg.css for more details.
+ */
+@namespace url("http://www.w3.org/1999/xhtml");
+@namespace svg url("http://www.w3.org/2000/svg");
