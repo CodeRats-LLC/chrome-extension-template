@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Roboto"; /* GRAD, XTRA, YOPQ, YTAS, YTDE, YTFI, YTLC, YTUC, opsz, slnt, wdth, wght */
-  src: url("../fonts/variable/RobotoFlex-Variable.woff2") format("woff2") tech("variations"),
-       url("../fonts/variable/RobotoFlex-Variable.woff2") format("woff2-variations");
+  src: url("@assets/fonts/variable/RobotoFlex-Variable.woff2") format("woff2") tech("variations"),
+       url("@assets/fonts/variable/RobotoFlex-Variable.woff2") format("woff2-variations");
 }
 @font-face {
   font-family: "Roboto Mono"; /* wght */
-  src: url("../fonts/variable/RobotoMono-Variable.woff2") format("woff2") tech("variations"),
-       url("../fonts/variable/RobotoMono-Variable.woff2") format("woff2-variations");
+  src: url("@assets/fonts/variable/RobotoMono-Variable.woff2") format("woff2") tech("variations"),
+       url("@assets/fonts/variable/RobotoMono-Variable.woff2") format("woff2-variations");
 }
 @font-face {
   font-family: "Roboto Mono Italic"; /* slnt */
-  src: url("../fonts/variable/RobotoMono-Italic-Variable.woff2") format("woff2") tech("variations"),
-       url("../fonts/variable/RobotoMono-Italic-Variable.woff2") format("woff2-variations");
+  src: url("@assets/fonts/variable/RobotoMono-Italic-Variable.woff2") format("woff2") tech("variations"),
+       url("@assets/fonts/variable/RobotoMono-Italic-Variable.woff2") format("woff2-variations");
 }
