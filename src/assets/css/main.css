@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@import url("./namespaces.css");
+
+@import url("@modules/@unocss/reset/tailwind-compat.css");
+
+@import url("./fonts.css");
+@import url("./vars.css");
+@import url("./svg.css");
+@import url("./app.css");

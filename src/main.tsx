@@ -1,6 +1,6 @@
 import { JSX, render } from 'preact';
 
-import './styles/main.css';
+import '@assets/css/main.css';
 
 import 'uno.css';
 import 'virtual:uno.css';

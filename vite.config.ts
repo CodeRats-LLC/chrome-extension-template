@@ -8,12 +8,14 @@ const src = resolve(__dirname, 'src');
 const assetsDir = resolve(src, 'assets');
 const outDir = resolve(__dirname, 'dist');
 const publicDir = resolve(__dirname, 'public');
+const modulesDir = resolve(__dirname, 'node_modules');
 
 export default defineConfig({
   resolve: {
     alias: {
       '@src': src,
       '@assets': assetsDir,
+      '@modules': modulesDir,
     },
   },
   plugins: [

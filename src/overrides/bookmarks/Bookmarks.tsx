@@ -15,7 +15,7 @@ const Bookmarks = () => {
           Learn Preact
         </a>
       </p>
-      <p data-testid='history_text' class='p-6 text-3xl text-purple-400'>
+      <p data-testid='bookmarks_text' class='p-6 text-3xl text-purple-400'>
         Bookmarks page
       </p>
     </div>

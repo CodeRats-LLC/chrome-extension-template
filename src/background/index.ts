@@ -1,10 +1,10 @@
 console.log('service worker loaded');
 
-// A generic onclick callback function.
-function genericOnClick(info: chrome.contextMenus.OnClickData, tab: chrome.tabs.Tab | undefined) {
+/**
+ */
+function contextMenuClick(info: chrome.contextMenus.OnClickData, tab: chrome.tabs.Tab | undefined) {
   switch (info.menuItemId) {
-    case 'sampleContextMenu':
-      // toggle the sidebar
+    case 'appOpenSidebar':
       if (!tab) return;
       chrome.sidePanel.open({ windowId: tab.windowId });
       break;
@@ -13,15 +13,44 @@ function genericOnClick(info: chrome.contextMenus.OnClickData, tab: chrome.tabs.
   }
 }
 
-chrome.runtime.onInstalled.addListener((details) => {
-  console.log('runtime.onInstalled');
-  if (details.reason !== "install" && details.reason !== "update") return;
+/**
+ */
+const installContextMenu = () => {
   console.log('installing context menu');
+
   chrome.contextMenus.create({
-    id: 'sampleContextMenu',
-    title: 'Sample Context Menu',
+    id: 'appContextMenu',
+    title: 'MyContextMenu',
     contexts: ["page"],
   });
+
+  chrome.contextMenus.create({
+    id: 'appOpenSidebar',
+    parentId: 'appContextMenu',
+    title: 'Open Sidebar',
+    contexts: ["page"],
+  });
+};
+
+/**
+ */
+chrome.runtime.onInstalled.addListener((details) => {
+  console.log('runtime.onInstalled');
+
+  switch (details.reason) {
+    case 'install':
+      installContextMenu();
+      break;
+    case 'update':
+      break;
+    case 'chrome_update':
+      break;
+    case 'shared_module_update':
+      break;
+    default:
+      break;
+  }
+
 });
 
-chrome.contextMenus.onClicked.addListener(genericOnClick);
+chrome.contextMenus.onClicked.addListener(contextMenuClick);

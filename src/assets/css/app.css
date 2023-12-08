@@ -1,0 +1,41 @@
+/*  ----------------------------------------------------------------------------
+ *  Common Rules
+ *  ------------------------------------------------------------------------- */
+
+*|* {
+    pointer-events: all;
+    -webkit-app-region: no-drag;
+}
+
+*|*[class~="draggable"] {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-app-region: drag;
+}
+
+html,
+body {
+    pointer-events: none;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 121;
+  font-variation-settings: "wdth" 121, "slnt" -10;
+
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  font-weight: var(--primary-font-weight);
+  font-variation-settings: var(--primary-font-variations);
+
+  color: var(--primary-font-color);
+  line-height: var(--primary-line-height);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}

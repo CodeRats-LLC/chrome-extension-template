@@ -15,7 +15,6 @@
     "format": "prettier src/ scripts/ --write"
   },
   "type": "module",
-  "packageManager": "npm@v18.14.0",
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
