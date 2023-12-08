@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: npm build
-      - run: npm test
+      - run: npm run build
+      - run: npm run test
