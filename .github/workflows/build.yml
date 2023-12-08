@@ -11,6 +11,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: fell-lucas/setup-pnpm-action@v2
-      - run: pnpm build
-      - run: pnpm test
+      - run: npm build
+      - run: npm test
